@@ -16,43 +16,44 @@
       <div>
         <h1>Want to go to Mars?</h1>
         <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-      <div>
-        <h2 class="italic">Personal details</h2>
+      <fieldset>
+        <legend class="italic giga bold">Personal details</legend>
         <div class="grid">
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
-          <div class="push">
-            <label for="name">Name</label>
-            <input id="name" required>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
+            <div class="push">
+              <label for="name">Name</label>
+              <input id="name" required>
+            </div>
+            <div class="push">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="me@me.com" required>
+            </div>
           </div>
-          <div class="push">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="me@me.com" required>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
+            <div class="push">
+              <label for="age">Age</label>
+              <input id="age" required>
+            </div>
+            <div class="push">
+              <label for="subject">Physical fitness</label>
+              <select id="subject">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
           </div>
         </div>
-        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
-          <div class="push">
-            <label for="age">Age</label>
-            <input id="age" required>
-          </div>
-          <div class="push">
-            <label for="subject">Physical fitness</label>
-            <select id="subject">
-              <option>Super-human</option>
-              <option>Fit as a fiddle</option>
-              <option>Not terribly strong</option>
-              <option>A little couch-potato-y</option>
-            </select>
-          </div>
-      </div>
-      </div>
+      </fieldset>
         <div class="push gutter-1-4">
           <label for="address">Address</label>
           <input id="address" required>
         </div>
 
       </div>
-      <div class="gutter-1-4">
-        <h2 class="unit italic">Mission statement</h2>
+      <fieldset class="gutter-1-4">
+        <legend class="unit italic push giga bold">Mission statement</legend>
         <div class="push">
           <label for="details">Why do you want to go to Mars?</label>
           <textarea id="details" required></textarea>
@@ -60,9 +61,9 @@
         <div class="center-text push">
           <button class="btn mega" type="submit">Register for the trip!</button>
         </div>
-        </div>
-        <p>Request to join the mission</p>
-      </div>
+
+        <input type="hidden" name="_subject" value="Request to join the mission">
+      </fieldset>
     </form>
   </section>
 </body>
