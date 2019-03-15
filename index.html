@@ -11,54 +11,54 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-  <section>
+  <section class="island wrapper gutter">
     <form class="push-0" method="POST" action="https://formspree.io/nadia.otake@gmail.com">
-      <div class="island max-lenght">
+      <div>
         <h1>Want to go to Mars?</h1>
         <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       <div>
         <h2 class="italic">Personal details</h2>
         <div class="grid">
-        <div class="unit xs s m-1-2 l xl">
-        <div class="push">
-          <label for="name">Name</label>
-          <input id="name" required>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
+          <div class="push">
+            <label for="name">Name</label>
+            <input id="name" required>
+          </div>
+          <div class="push">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="me@me.com" required>
+          </div>
         </div>
-        <div class="push">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" required>
-        </div>
-        </div>
-        <div class="unit xs s m-1-2 l xl">
-        <div class="push">
-          <label for="age">Age</label>
-          <input id="age" required>
-        </div>
-        <div class="push">
-          <label for="subject">Physical fitness</label>
-          <select id="subject">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-4">
+          <div class="push">
+            <label for="age">Age</label>
+            <input id="age" required>
+          </div>
+          <div class="push">
+            <label for="subject">Physical fitness</label>
+            <select id="subject">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
       </div>
       </div>
-        <div class="push">
+        <div class="push gutter-1-4">
           <label for="address">Address</label>
           <input id="address" required>
         </div>
 
       </div>
-      <div>
+      <div class="gutter-1-4">
         <h2 class="unit italic">Mission statement</h2>
         <div class="push">
           <label for="details">Why do you want to go to Mars?</label>
           <textarea id="details" required></textarea>
         </div>
         <div class="center-text">
-          <button class="btn btn-light mega" type="submit">Register for the trip!</button>
+          <button class="btn mega" type="submit">Register for the trip!</button>
         </div>
         </div>
       </div>
