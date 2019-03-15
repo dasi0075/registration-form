@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: #f2f2f2;
 }
 
@@ -16,7 +15,19 @@ section {
   color: #fff;
 }
 
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
 h1 {
   border-bottom: solid thin #000;
   padding-top: 1em;
+}
+
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
 }
