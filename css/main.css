@@ -54,6 +54,10 @@ h1 {
     padding: .5rem;
   }
 
+  p {
+    padding-right: 0;
+  }
+
   .subject {
     padding-bottom: .5rem;
   }
